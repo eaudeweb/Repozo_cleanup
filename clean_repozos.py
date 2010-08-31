@@ -78,5 +78,6 @@ if __name__ == '__main__':
     if '-c' in opts:
         commit = True
 
-    walk_dir(args[0])
+    for p in args:
+        walk_dir(p)
 
